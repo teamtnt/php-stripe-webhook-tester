@@ -80,7 +80,9 @@ class WebhookTester
             throw new InvalidEventException("Event name required");
         }
 
-        $response = $this->client->post($this->endpoint, ['body' => $this->loadEventData($event)]);
+        $response = $this->client->post($this->endpoint, [
+            'json' => $this->loadEventData($event)
+        ]);
 
         return $response;
     }

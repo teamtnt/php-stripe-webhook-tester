@@ -23,7 +23,13 @@ class WebhookTester
 
     public function loadEventData($name)
     {
-       return file_get_contents('./src/webhooks/'.$this->version.'/charge.succeeded.json');
+        $file = './src/webhooks/'.$this->version.'/'.$name.'.json';
+
+        if (!file_exists($file)) {
+            throw new InvalidEventException("Event does not exist in this version", 1);
+        }
+
+        return file_get_contents($file);
     }
 
 }

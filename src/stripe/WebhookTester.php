@@ -20,7 +20,7 @@ class WebhookTester
     private $client;
 
     public function __construct($endpoint = null) {
-        if($endpoint) {
+        if ($endpoint) {
             $this->endpoint = $endpoint;
         }
         $this->client = new Client();
@@ -59,7 +59,7 @@ class WebhookTester
         $file = './src/webhooks/'.$this->version.'/'.$name.'.json';
 
         if (!file_exists($file)) {
-            throw new InvalidEventException("Event does not exist in version " . $this->version, 1);
+            throw new InvalidEventException("Event does not exist in version ".$this->version, 1);
         }
 
         return file_get_contents($file);

@@ -1,3 +1,3 @@
 <?php namespace TeamTNT\Stripe;
 
-class InvalidEventException extends \Exception{}
+class InvalidEventException extends \Exception {}

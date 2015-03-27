@@ -20,7 +20,9 @@ class WebhookTester
     private $client;
 
     public function __construct($endpoint = null) {
-        if($endpoint) $this->endpoint = $endpoint;
+        if($endpoint) {
+            $this->endpoint = $endpoint;
+        }
         $this->client = new Client();
     }
 

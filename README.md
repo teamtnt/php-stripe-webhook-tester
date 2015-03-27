@@ -21,8 +21,11 @@ $ composer require TeamTNT/php-stripe-webhook-tester
 ## Usage
 
 ``` php
-$skeleton = new TeamTNT\Skeleton();
-echo $skeleton->echoPhrase('Hello, TeamTNT!');
+$tester = new TeamTNT\Stripe\WebhookTester();
+$tester->setVersion('2014-09-08');
+$tester->setEndpoint('http://local.dev/stripe/webhooks');
+
+$response = $tester->triggerEvent('charge.succeeded');
 ```
 
 ## Testing

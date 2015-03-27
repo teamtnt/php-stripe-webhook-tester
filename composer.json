@@ -9,14 +9,16 @@
     "license": "MIT",
     "authors": [
         {
-            "name": ":Nenad Ticaric",
+            "name": "Nenad Ticaric",
             "email": "nticaric@gmail.com",
-            "homepage": ":http:://www.tntstudio.us",
+            "homepage": "http://www.tntstudio.us",
             "role": "Developer"
         }
     ],
     "require": {
-        "php" : ">=5.3.0"
+        "php" : ">=5.4.0",
+        "nesbot/carbon": "~1.0",
+        "guzzlehttp/guzzle": "~5.0"
     },
     "require-dev": {
         "phpunit/phpunit" : "4.*",

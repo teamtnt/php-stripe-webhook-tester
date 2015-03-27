@@ -1,4 +1,4 @@
-# php-stripe-webhook-tester
+# PHP Stripe Webhook Tester
 
 [![Latest Version](https://img.shields.io/github/release/thephpTeamTNT/php-stripe-webhook-tester.svg?style=flat-square)](https://github.com/thephpTeamTNT/php-stripe-webhook-tester/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
@@ -6,8 +6,6 @@
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/thephpTeamTNT/php-stripe-webhook-tester.svg?style=flat-square)](https://scrutinizer-ci.com/g/thephpTeamTNT/php-stripe-webhook-tester/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/thephpTeamTNT/php-stripe-webhook-tester.svg?style=flat-square)](https://scrutinizer-ci.com/g/thephpTeamTNT/php-stripe-webhook-tester)
 [![Total Downloads](https://img.shields.io/packagist/dt/TeamTNT/php-stripe-webhook-tester.svg?style=flat-square)](https://packagist.org/packages/TeamTNT/php-stripe-webhook-tester)
-
-**Note:** Replace ```:Nenad Ticaric``` ```:author_username``` ```:http:://www.tntstudio.us``` ```nticaric@gmail.com``` ```php-stripe-webhook-tester``` ```:package_description``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line.
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
 PSRs you support to avoid any confusion with users and contributors.
@@ -43,7 +41,7 @@ If you discover any security related issues, please email nticaric@gmail.com ins
 
 ## Credits
 
-- [:Nenad Ticaric](https://github.com/:author_username)
+- [Nenad Ticaric](https://github.com/nticaric)
 - [All Contributors](../../contributors)
 
 ## License

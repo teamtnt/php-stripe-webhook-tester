@@ -56,7 +56,7 @@ class WebhookTester
 
     public function loadEventData($name)
     {
-        $file = './src/webhooks/'.$this->version.'/'.$name.'.json';
+        $file = dirname(__FILE__) . '/../webhooks/'.$this->version.'/'.$name.'.json';
 
         if (!file_exists($file)) {
             throw new InvalidEventException("Event does not exist in version ".$this->version, 1);

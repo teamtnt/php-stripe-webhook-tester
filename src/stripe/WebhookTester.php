@@ -19,8 +19,9 @@ class WebhookTester
      */
     private $client;
 
-    public function __construct(){
-        $this->setClient(new Client());
+    public function __construct($endpoint = null) {
+        if($endpoint) $this->endpoint = $endpoint;
+        $this->client = new Client();
     }
 
     /**
@@ -42,11 +43,13 @@ class WebhookTester
     public function setVersion($version)
     {
         $this->version = $version;
+        return $this;
     }
 
     public function setEndpoint($endpoint)
     {
         $this->endpoint = $endpoint;
+        return $this;
     }
 
     public function loadEventData($name)

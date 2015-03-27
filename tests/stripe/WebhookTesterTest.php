@@ -49,12 +49,30 @@ class WebhookTesterTest extends \PHPUnit_Framework_TestCase
 
     public function testTriggerEvent()
     {
-        $tester = new TeamTNT\Stripe\WebhookTester();
+        $tester = new WebhookTester();
         $tester->setVersion('2014-09-08');
         $tester->setEndpoint('http://httpbin.org/post');
 
         $response = $tester->triggerEvent('charge.succeeded');
 
         $this->assertEquals(200, $response->getStatusCode());
+    }
+
+    public function testEndpointThroughContstructor()
+    {
+        $tester = new WebhookTester('http://httpbin.org/post');
+        $response = $tester->triggerEvent('charge.succeeded');
+
+        $this->assertEquals(200, $response->getStatusCode());
+    }
+
+    public function testChaining()
+    {
+        $tester = new WebhookTester;
+        $response = $tester->setEndpoint('http://httpbin.org/post')
+                           ->setVersion('2014-09-08')
+                           ->triggerEvent('charge.succeeded');
+
+        $this->assertEquals(200, $response->getStatusCode());                  
     }
 }

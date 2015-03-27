@@ -29,7 +29,7 @@ class WebhookTesterTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @expectedException        TeamTNT\Stripe\InvalidEventException
-     * @expectedExceptionMessage Event does not exist in this version
+     * @expectedExceptionMessage Event does not exist in version 2014-09-08
      */
     public function testNonExistentEvent()
     {

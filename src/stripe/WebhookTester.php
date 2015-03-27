@@ -5,11 +5,12 @@ namespace TeamTNT\Stripe;
 class WebhookTester
 {
     /**
-     * Create a new Skeleton Instance
+     * Default API version
      */
-    public function __construct()
-    {
-        // constructor body
-    }
+    public $version = "2014-09-08";
 
+    public function setVersion($value)
+    {
+        $this->version = $value;
+    }
 }

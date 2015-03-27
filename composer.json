@@ -32,12 +32,12 @@
   },
   "autoload": {
     "psr-4": {
-      "TeamTNT\\Stripe\\Webhook\\": "src"
+      "TeamTNT\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "TeamTNT\\Stripe\\Webhook\\Test\\": "tests"
+      "TeamTNT\\Test\\": "tests"
     }
   },
   "extra": {

@@ -36,4 +36,25 @@ class WebhookTesterTest extends \PHPUnit_Framework_TestCase
         $tester = new WebhookTester;
         $actual = $tester->loadEventData('does.not.exist');
     }
+
+    /**
+     * @expectedException        TeamTNT\Stripe\InvalidEventException
+     * @expectedExceptionMessage Event name required
+     */
+    public function testEmptyEventName()
+    {
+        $tester = new WebhookTester;
+        $actual = $tester->triggerEvent();
+    }
+
+    public function testTriggerEvent()
+    {
+        $tester = new TeamTNT\Stripe\WebhookTester();
+        $tester->setVersion('2014-09-08');
+        $tester->setEndpoint('http://httpbin.org/post');
+
+        $response = $tester->triggerEvent('charge.succeeded');
+
+        $this->assertEquals(200, $response->getStatusCode());
+    }
 }

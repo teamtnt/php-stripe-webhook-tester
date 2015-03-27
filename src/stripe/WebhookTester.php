@@ -81,7 +81,8 @@ class WebhookTester
         }
 
         $response = $this->client->post($this->endpoint, [
-            'json' => $this->loadEventData($event)
+            'headers' => ['content-type' => 'application/json'],
+            'body' => $this->loadEventData($event)
         ]);
 
         return $response;

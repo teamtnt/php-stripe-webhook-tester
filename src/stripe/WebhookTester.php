@@ -9,8 +9,15 @@ class WebhookTester
      */
     public $version = "2014-09-08";
 
-    public function setVersion($value)
+    public $endpoint;
+
+    public function setVersion($version)
     {
-        $this->version = $value;
+        $this->version = $version;
+    }
+
+    public function setEndpoint($endpoint)
+    {
+        $this->endpoint = $endpoint;
     }
 }

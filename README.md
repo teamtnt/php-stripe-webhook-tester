@@ -38,6 +38,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ## Credits
 
 - [Nenad Ticaric](https://github.com/nticaric)
+- [Sasa Tokic](https://github.com/stokic)
 - [All Contributors](../../contributors)
 
 ## License

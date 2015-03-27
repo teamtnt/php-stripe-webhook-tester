@@ -20,4 +20,10 @@ class WebhookTester
     {
         $this->endpoint = $endpoint;
     }
+
+    public function loadEventData($name)
+    {
+       return file_get_contents('./src/webhooks/'.$this->version.'/charge.succeeded.json');
+    }
+
 }

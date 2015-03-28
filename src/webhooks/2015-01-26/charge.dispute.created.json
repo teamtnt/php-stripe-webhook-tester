@@ -1,0 +1,60 @@
+{
+    "created": 1326853478,
+    "livemode": false,
+    "id": "evt_00000000000000",
+    "type": "charge.dispute.created",
+    "object": "event",
+    "request": null,
+    "pending_webhooks": 1,
+    "api_version": "2015-01-26",
+    "data": {
+        "object": {
+            "charge": "ch_00000000000000",
+            "amount": 1000,
+            "created": 1427557733,
+            "status": "needs_response",
+            "livemode": false,
+            "currency": "usd",
+            "object": "dispute",
+            "reason": "general",
+            "is_charge_refundable": false,
+            "balance_transactions": [],
+            "evidence_details": {
+                "due_by": 1429228799,
+                "past_due": false,
+                "has_evidence": false,
+                "submission_count": 0
+            },
+            "evidence": {
+                "product_description": null,
+                "customer_name": null,
+                "customer_email_address": null,
+                "customer_purchase_ip": null,
+                "customer_signature": null,
+                "billing_address": null,
+                "receipt": null,
+                "shipping_address": null,
+                "shipping_date": null,
+                "shipping_carrier": null,
+                "shipping_tracking_number": null,
+                "shipping_documentation": null,
+                "access_activity_log": null,
+                "service_date": null,
+                "service_documentation": null,
+                "duplicate_charge_id": null,
+                "duplicate_charge_explanation": null,
+                "duplicate_charge_documentation": null,
+                "refund_policy": null,
+                "refund_policy_disclosure": null,
+                "refund_refusal_explanation": null,
+                "cancellation_policy": null,
+                "cancellation_policy_disclosure": null,
+                "cancellation_rebuttal": null,
+                "customer_communication": null,
+                "uncategorized_text": null,
+                "uncategorized_file": null
+            },
+            "metadata": []
+        }
+    }
+}

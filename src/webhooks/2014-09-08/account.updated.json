@@ -1,0 +1,114 @@
+{
+    "created": 1326853478,
+    "livemode": false,
+    "id": "evt_00000000000000",
+    "type": "account.updated",
+    "object": "event",
+    "request": null,
+    "pending_webhooks": 1,
+    "api_version": "2014-09-08",
+    "data": {
+        "object": {
+            "id": "acct_00000000000000",
+            "email": "test@stripe.com",
+            "statement_descriptor": "TEST",
+            "display_name": "webhook.tester",
+            "timezone": "America\/Los_Angeles",
+            "details_submitted": true,
+            "currencies_supported": [
+                "usd",
+                "aed",
+                "afn",
+                "..."
+            ],
+            "default_currency": "usd",
+            "country": "US",
+            "object": "account",
+            "business_name": "webhook.tester",
+            "business_url": "webhook.tester",
+            "business_logo": "webhook.tester.jpg",
+            "debit_negative_balances": true,
+            "bank_accounts": {
+                "object": "list",
+                "total_count": 1,
+                "has_more": false,
+                "url": "\/v1\/accounts\/acct_0000000000000000\/bank_accounts",
+                "data": [
+                    {
+                        "object": "bank_account",
+                        "id": "ba_00000000000000",
+                        "last4": "1234",
+                        "country": "US",
+                        "currency": "usd",
+                        "status": "new",
+                        "fingerprint": null,
+                        "routing_number": "123456789",
+                        "bank_name": "WEBHOOK TESTER BANK",
+                        "default_for_currency": true
+                    }
+                ]
+            },
+            "verification": {
+                "decline_on_cvc_failure": false,
+                "decline_on_avs_failure": false,
+                "fields_needed": [
+                    "legal_entity.verification.document"
+                ],
+                "due_by": 1234567891
+            },
+            "transfer_schedule": {
+                "delay_days": 2,
+                "interval": "daily"
+            },
+            "tos_acceptance": {
+                "ip": "111.111.111.111",
+                "date": 1410450934,
+                "user_agent": "Mozilla"
+            },
+            "tax_details": {
+                "verification_needed": null,
+                "verification_pending": false,
+                "legal_name": "Tester",
+                "tax_id": "12-3456789"
+            },
+            "transfer_enabled": true,
+            "charge_enabled": true,
+            "phone_number": "1234567890",
+            "decline_charge_on_cvc_failure": false,
+            "decline_charge_on_avs_failure": false,
+            "bank_account": {
+                "object": "bank_account",
+                "id": "ba_00000000000000",
+                "last4": "1234",
+                "country": "US",
+                "currency": "usd",
+                "status": "new",
+                "fingerprint": null,
+                "routing_number": "123456789",
+                "bank_name": "WEBHOOK TESTER BANK",
+                "default_for_currency": true
+            },
+            "address": {
+                "street": "123 Street Name",
+                "city": "City Name",
+                "state": "NY",
+                "zip": "12345",
+                "country": "US"
+            },
+            "personal_information": {
+                "first_name": "FirstName",
+                "last_name": "LastName",
+                "dob_day": "1",
+                "dob_month": "1",
+                "dob_year": "1900",
+                "verified_name": "FirstName LastName"
+            }
+        },
+        "previous_attributes": {
+            "verification": {
+                "fields_needed": [],
+                "due_by": null
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+{
+    "created": 1326853478,
+    "livemode": false,
+    "id": "evt_00000000000000",
+    "type": "account.updated",
+    "object": "event",
+    "request": null,
+    "pending_webhooks": 1,
+    "api_version": "2015-03-24",
+    "data": {
+        "object": {
+            "id": "acct_00000000000000",
+            "email": "test@stripe.com",
+            "statement_descriptor": "TEST",
+            "display_name": "webhook.tester",
+            "timezone": "America\/Los_Angeles",
+            "details_submitted": true,
+            "charges_enabled": true,
+            "transfers_enabled": true,
+            "currencies_supported": [
+                "usd",
+                "aed",
+                "afn",
+                "..."
+            ],
+            "default_currency": "usd",
+            "country": "US",
+            "object": "account",
+            "business_name": "webhook.tester",
+            "business_url": "webhook.tester",
+            "support_phone": "1234567890",
+            "business_logo": "webhook.tester.jpg",
+            "managed": false,
+            "product_description": "Some description",
+            "debit_negative_balances": true,
+            "bank_accounts": {
+                "object": "list",
+                "total_count": 1,
+                "has_more": false,
+                "url": "\/v1\/accounts\/acct_0000000000000000\/bank_accounts",
+                "data": [
+                    {
+                        "object": "bank_account",
+                        "id": "ba_00000000000000000000000",
+                        "last4": "1234",
+                        "country": "US",
+                        "currency": "usd",
+                        "status": "new",
+                        "fingerprint": null,
+                        "routing_number": "123456789",
+                        "bank_name": "WEBHOOK TESTER BANK",
+                        "default_for_currency": true
+                    }
+                ]
+            },
+            "verification": {
+                "fields_needed": [
+                    "legal_entity.verification.document"
+                ],
+                "due_by": 1427815606,
+                "contacted": false
+            },
+            "transfer_schedule": {
+                "delay_days": 2,
+                "interval": "daily"
+            },
+            "tos_acceptance": {
+                "ip": "111.111.111.111",
+                "date": 1410450934,
+                "user_agent": "Mozilla"
+            },
+            "legal_entity": {
+                "type": "sole_prop",
+                "business_name": "Tester",
+                "address": {
+                    "line1": "123 Street Name",
+                    "line2": null,
+                    "city": "City Name",
+                    "state": "NY",
+                    "postal_code": "90403",
+                    "country": "US"
+                },
+                "first_name": "FirstName",
+                "last_name": "LastName",
+                "personal_address": {
+                    "line1": null,
+                    "line2": null,
+                    "city": null,
+                    "state": null,
+                    "postal_code": null,
+                    "country": "US"
+                },
+                "dob": {
+                    "day": 14,
+                    "month": 4,
+                    "year": 1977
+                },
+                "additional_owners": [],
+                "verification": {
+                    "status": "verified",
+                    "document": null,
+                    "details": null
+                }
+            },
+            "decline_charge_on": {
+                "cvc_failure": false,
+                "avs_failure": false
+            }
+        },
+        "previous_attributes": {
+            "verification": {
+                "fields_needed": [],
+                "due_by": null
+            }
+        }
+    }
+}

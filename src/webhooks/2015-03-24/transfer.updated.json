@@ -1,0 +1,57 @@
+{
+    "created": 1326853478,
+    "livemode": false,
+    "id": "evt_00000000000000",
+    "type": "transfer.updated",
+    "object": "event",
+    "request": null,
+    "pending_webhooks": 1,
+    "api_version": "2015-03-24",
+    "data": {
+        "object": {
+            "id": "tr_00000000000000",
+            "object": "transfer",
+            "created": 1422591483,
+            "date": 1422662400,
+            "livemode": false,
+            "amount": 9650,
+            "currency": "usd",
+            "reversed": false,
+            "status": "pending",
+            "type": "bank_account",
+            "reversals": {
+                "object": "list",
+                "total_count": 0,
+                "has_more": false,
+                "url": "\/v1\/transfers\/tr_00000000000000000000000\/reversals",
+                "data": []
+            },
+            "balance_transaction": "txn_00000000000000",
+            "bank_account": {
+                "object": "bank_account",
+                "id": "ba_00000000000000",
+                "last4": "1234",
+                "country": "US",
+                "currency": "usd",
+                "status": "new",
+                "fingerprint": null,
+                "routing_number": "123456789",
+                "bank_name": "WEBHOOK TESTER BANK",
+                "default_for_currency": true
+            },
+            "destination": "ba_00000000000000000000000",
+            "description": "STRIPE TRANSFER",
+            "failure_message": null,
+            "failure_code": null,
+            "amount_reversed": 0,
+            "metadata": [],
+            "statement_descriptor": null,
+            "recipient": null,
+            "source_transaction": null,
+            "application_fee": null
+        },
+        "previous_attributes": {
+            "description": "Old description"
+        }
+    }
+}

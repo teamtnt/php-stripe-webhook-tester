@@ -2,18 +2,18 @@
     "created": 1326853478,
     "livemode": false,
     "id": "evt_00000000000000",
-    "type": "charge.succeeded",
+    "type": "charge.failed",
     "object": "event",
     "request": null,
     "pending_webhooks": 1,
-    "api_version": "2014-09-08",
+    "api_version": "2015-01-26",
     "data": {
         "object": {
             "id": "ch_00000000000000",
             "object": "charge",
             "created": 1426150389,
             "livemode": false,
-            "paid": true,
+            "paid": false,
             "status": "failed",
             "amount": 5000,
             "currency": "usd",
@@ -39,8 +39,7 @@
                 "address_zip_check": null,
                 "dynamic_last4": null,
                 "metadata": [],
-                "customer": "cus_00000000000000",
-                "fingerprint": "TTKQdP1Omgi1czlY"
+                "customer": "cus_00000000000000"
             },
             "captured": false,
             "card": {
@@ -64,8 +63,7 @@
                 "address_zip_check": null,
                 "dynamic_last4": null,
                 "metadata": [],
-                "customer": "cus_00000000000000",
-                "fingerprint": "TTKQdP1Omgi1czlY"
+                "customer": "cus_00000000000000"
             },
             "balance_transaction": "txn_00000000000000",
             "failure_message": "Your card has expired.",
@@ -88,8 +86,7 @@
                 "has_more": false,
                 "url": "\/v1\/charges\/ch_00000000000000\/refunds",
                 "data": []
-            },
-            "statement_description": "Premium"
+            }
         }
     }
 }

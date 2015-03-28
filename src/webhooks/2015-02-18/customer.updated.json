@@ -1,0 +1,67 @@
+{
+    "created": 1326853478,
+    "livemode": false,
+    "id": "evt_00000000000000",
+    "type": "customer.updated",
+    "object": "event",
+    "request": null,
+    "pending_webhooks": 1,
+    "api_version": "2015-02-18",
+    "data": {
+        "object": {
+            "object": "customer",
+            "created": 1420479587,
+            "id": "cus_00000000000000",
+            "livemode": false,
+            "description": null,
+            "email": "email@example.com",
+            "delinquent": false,
+            "metadata": [],
+            "subscriptions": {
+                "object": "list",
+                "total_count": 0,
+                "has_more": false,
+                "url": "\/v1\/customers\/cus_00000000000000\/subscriptions",
+                "data": []
+            },
+            "discount": null,
+            "account_balance": 0,
+            "currency": "usd",
+            "sources": {
+                "object": "list",
+                "total_count": 1,
+                "has_more": false,
+                "url": "\/v1\/customers\/cus_00000000000000\/sources",
+                "data": [
+                    {
+                        "id": "card_000000000000000000000000",
+                        "object": "card",
+                        "last4": "4242",
+                        "brand": "Visa",
+                        "funding": "credit",
+                        "exp_month": 1,
+                        "exp_year": 2015,
+                        "country": "US",
+                        "name": null,
+                        "address_line1": null,
+                        "address_line2": null,
+                        "address_city": null,
+                        "address_state": null,
+                        "address_zip": null,
+                        "address_country": null,
+                        "cvc_check": "pass",
+                        "address_line1_check": null,
+                        "address_zip_check": null,
+                        "dynamic_last4": null,
+                        "metadata": [],
+                        "customer": "cus_00000000000000"
+                    }
+                ]
+            },
+            "default_source": "card_000000000000000000000000"
+        },
+        "previous_attributes": {
+            "description": "Old description"
+        }
+    }
+}

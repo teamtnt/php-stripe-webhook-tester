@@ -1,0 +1,32 @@
+{
+    "created": 1326853478,
+    "livemode": false,
+    "id": "evt_00000000000000",
+    "type": "charge.dispute.closed",
+    "object": "event",
+    "request": null,
+    "pending_webhooks": 1,
+    "api_version": "2015-01-11",
+    "data": {
+        "object": {
+            "charge": "ch_00000000000000",
+            "amount": 1000,
+            "created": 1427558146,
+            "status": "won",
+            "livemode": false,
+            "currency": "usd",
+            "object": "dispute",
+            "reason": "general",
+            "is_charge_refundable": false,
+            "balance_transactions": [],
+            "evidence_details": {
+                "due_by": 1429228799,
+                "past_due": false,
+                "has_evidence": false,
+                "submission_count": 0
+            },
+            "evidence": "Here is some evidence",
+            "metadata": []
+        }
+    }
+}

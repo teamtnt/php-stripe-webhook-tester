@@ -7,8 +7,9 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/teamtnt/php-stripe-webhook-tester.svg?style=flat-square)](https://scrutinizer-ci.com/g/teamtnt/php-stripe-webhook-tester)
 [![Total Downloads](https://img.shields.io/packagist/dt/TeamTNT/php-stripe-webhook-tester.svg?style=flat-square)](https://packagist.org/packages/TeamTNT/php-stripe-webhook-tester)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
+The goal of this package is to make testing stripe webhooks easy on a local machine without the use
+of ngrok or other similar tunneling services. The package will simulate a `post` request to a specified
+endpoint with a json containing event data and make sure that your application reacts accordingly.
 
 ## Install
 
@@ -26,6 +27,13 @@ $tester->setVersion('2014-09-08');
 $tester->setEndpoint('http://local.dev/stripe/webhooks');
 
 $response = $tester->triggerEvent('charge.succeeded');
+```
+
+For your convenience you can use chained methods
+
+``` php
+$tester = new TeamTNT\Stripe\WebhookTester('http://local.dev/stripe/webhooks);
+$response = $tester->setVersion('2014-09-08')->triggerEvent('charge.succeeded');
 ```
 
 ## Testing

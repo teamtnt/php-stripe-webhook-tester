@@ -39,10 +39,5 @@
     "psr-4": {
       "TeamTNT\\Test\\": "tests"
     }
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.0-dev"
-    }
   }
 }

@@ -38,7 +38,7 @@ $response = $tester->setVersion('2014-09-08')->triggerEvent('charge.succeeded');
 
 ## Availabe versions and events
 
-Available versions and events can be found in the webhooks directory [webhooks directory](src/webhooks)
+Available versions and events can be found in the [webhooks directory](src/webhooks)
 ## Testing
 
 ``` bash

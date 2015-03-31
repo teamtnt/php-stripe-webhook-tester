@@ -16,7 +16,7 @@ endpoint with a json containing event data and make sure that your application r
 Via Composer
 
 ``` bash
-$ composer require TeamTNT/php-stripe-webhook-tester
+$ composer require TeamTNT/php-stripe-webhook-tester 1.0.*
 ```
 
 ## Usage

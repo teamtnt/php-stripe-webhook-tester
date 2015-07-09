@@ -70,6 +70,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 - [Nenad Ticaric](https://github.com/nticaric)
 - [Sasa Tokic](https://github.com/stokic)
+- [Jesse Schutt](https://github.com/jschutt)
 - [All Contributors](../../contributors)
 
 ## License

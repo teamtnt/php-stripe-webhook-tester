@@ -35,6 +35,23 @@ For your convenience you can use chained methods
 $tester = new TeamTNT\Stripe\WebhookTester('http://local.dev/stripe/webhooks);
 $response = $tester->setVersion('2014-09-08')->triggerEvent('charge.succeeded');
 ```
+## Laravel Integration 
+To implement this package with [Laravel Cashier](http://laravel.com/docs/5.1/billing), you will need to override the `eventExistsOnStripe()` method in `Laravel\Cashier\WebhookController` with something like this:
+
+``` php
+protected function eventExistsOnStripe($id)
+{
+    if(App::environment() == 'testing' or App::environment() == 'local') {
+        return true;
+    }
+    try {
+        return ! is_null(StripeEvent::retrieve($id, Config::get('services.stripe.secret')));
+    } catch (Exception $e) {
+        return false;
+    }
+}
+```
+Without the environment checks Cashier attempts to verify that the dummy event is a valid webhook with Stripe, which will obviously fail.
 
 ## Available versions and events
 

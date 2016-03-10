@@ -2,8 +2,10 @@
 
 use TeamTNT\Stripe\WebhookTester;
 use GuzzleHttp\Client;
-use GuzzleHttp\Subscriber\Mock;
-use GuzzleHttp\Message\Response;
+use GuzzleHttp\Handler\MockHandler;
+use GuzzleHttp\HandlerStack;
+use GuzzleHttp\Psr7\Response;
+use GuzzleHttp\Psr7\Request;
 
 class WebhookTesterTest extends \PHPUnit_Framework_TestCase
 {
@@ -52,12 +54,15 @@ class WebhookTesterTest extends \PHPUnit_Framework_TestCase
 
     public function testTriggerEvent()
     {
-        $mock = new Mock([
-            new Response(200, []),         // Use response object
-            "HTTP/1.1 202 OK\r\nContent-Length: 0\r\n\r\n"  // Use a response string
+        $mock = new MockHandler([
+            new Response(200, []),
         ]);
+
         $tester = new WebhookTester();
-        $client = $tester->getClient()->getEmitter()->attach($mock);
+
+        $client = $tester->setClient(new Client([
+            'handler' => HandlerStack::create($mock)
+        ]));
 
         $tester->setVersion('2014-09-08');
         $tester->setEndpoint('http://localhost/stripe/webhooks');
@@ -69,12 +74,16 @@ class WebhookTesterTest extends \PHPUnit_Framework_TestCase
 
     public function testEndpointThroughContstructor()
     {
-        $mock = new Mock([
-            new Response(200, []),         // Use response object
-            "HTTP/1.1 202 OK\r\nContent-Length: 0\r\n\r\n"  // Use a response string
+        $mock = new MockHandler([
+            new Response(200, []),
         ]);
+
         $tester = new WebhookTester('http://localhost/stripe/webhooks');
-        $client = $tester->getClient()->getEmitter()->attach($mock);
+
+        $client = $tester->setClient(new Client([
+            'handler' => HandlerStack::create($mock)
+        ]));
+
         $response = $tester->triggerEvent('charge.succeeded');
 
         $this->assertEquals(200, $response->getStatusCode());
@@ -82,12 +91,15 @@ class WebhookTesterTest extends \PHPUnit_Framework_TestCase
 
     public function testChaining()
     {
-        $mock = new Mock([
-            new Response(200, []),         // Use response object
-            "HTTP/1.1 202 OK\r\nContent-Length: 0\r\n\r\n"  // Use a response string
+        $mock = new MockHandler([
+            new Response(200, []),
         ]);
+
         $tester = new WebhookTester();
-        $client = $tester->getClient()->getEmitter()->attach($mock);
+        
+        $client = $tester->setClient(new Client([
+            'handler' => HandlerStack::create($mock)
+        ]));
 
         $response = $tester->setEndpoint('http://localhost/stripe/webhooks')
                            ->setVersion('2014-09-08')

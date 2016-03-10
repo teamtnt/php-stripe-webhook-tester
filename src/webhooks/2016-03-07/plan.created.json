@@ -1,0 +1,26 @@
+{
+  "created": 1326853478,
+  "livemode": false,
+  "id": "evt_00000000000000",
+  "type": "plan.created",
+  "object": "event",
+  "request": null,
+  "pending_webhooks": 1,
+  "api_version": "2016-03-07",
+  "data": {
+    "object": {
+      "id": "gold_00000000000000",
+      "object": "plan",
+      "amount": 2000,
+      "created": 1457644477,
+      "currency": "usd",
+      "interval": "month",
+      "interval_count": 1,
+      "livemode": false,
+      "metadata": {},
+      "name": "Gold Special",
+      "statement_descriptor": null,
+      "trial_period_days": null
+    }
+  }
+}

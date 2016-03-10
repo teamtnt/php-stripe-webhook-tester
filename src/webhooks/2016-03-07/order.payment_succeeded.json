@@ -1,0 +1,54 @@
+{
+  "created": 1326853478,
+  "livemode": false,
+  "id": "evt_00000000000000",
+  "type": "order.payment_succeeded",
+  "object": "event",
+  "request": null,
+  "pending_webhooks": 1,
+  "api_version": "2016-03-07",
+  "data": {
+    "object": {
+      "id": "or_00000000000000",
+      "object": "order",
+      "amount": 1500,
+      "application": null,
+      "application_fee": null,
+      "charge": null,
+      "created": 1457644433,
+      "currency": "usd",
+      "customer": null,
+      "email": null,
+      "items": [
+        {
+          "object": "order_item",
+          "amount": 1500,
+          "currency": "usd",
+          "description": "T-shirt",
+          "parent": "sk_17naXwIRVxWaBTbMRrhbKum6",
+          "quantity": null,
+          "type": "sku"
+        }
+      ],
+      "livemode": false,
+      "metadata": {},
+      "selected_shipping_method": null,
+      "shipping": {
+        "address": {
+          "city": "Anytown",
+          "country": "US",
+          "line1": "1234 Main street",
+          "line2": null,
+          "postal_code": "123456",
+          "state": null
+        },
+        "name": "Jenny Rosen",
+        "phone": null
+      },
+      "shipping_methods": null,
+      "status": "created",
+      "status_transitions": null,
+      "updated": 1457644433
+    }
+  }
+}

@@ -29,5 +29,6 @@
       "uncaptured_funds": false,
       "used_for_payment": false
     }
-  }
+  },
+  "user_id": "acct_0000000000000000"
 }

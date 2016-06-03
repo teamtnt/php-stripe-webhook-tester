@@ -39,5 +39,6 @@
       "status": "failed",
       "type": "bank_account"
     }
-  }
+  },
+  "user_id": "acct_0000000000000000"
 }

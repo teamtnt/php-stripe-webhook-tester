@@ -1,0 +1,30 @@
+{
+  "created": 1326853478,
+  "livemode": false,
+  "id": "evt_00000000000000",
+  "type": "plan.updated",
+  "object": "event",
+  "request": null,
+  "pending_webhooks": 1,
+  "api_version": "2018-02-06",
+  "data": {
+    "object": {
+      "id": "gold_00000000000000",
+      "object": "plan",
+      "amount": 2000,
+      "created": 1457644504,
+      "currency": "usd",
+      "interval": "month",
+      "interval_count": 1,
+      "livemode": false,
+      "metadata": {},
+      "nickname": "Gold Special",
+      "product": "prod_00000000000000",
+      "trial_period_days": null
+    },
+    "previous_attributes": {
+      "name": "Old name"
+    }
+  },
+  "user_id": "acct_0000000000000000"
+}

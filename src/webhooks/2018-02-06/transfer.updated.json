@@ -1,0 +1,47 @@
+{
+  "created": 1326853478,
+  "livemode": false,
+  "id": "evt_00000000000000",
+  "type": "transfer.updated",
+  "object": "event",
+  "request": null,
+  "pending_webhooks": 1,
+  "api_version": "2018-02-06",
+  "data": {
+    "object": {
+      "id": "tr_00000000000000",
+      "object": "transfer",
+      "amount": 1100,
+      "amount_reversed": 0,
+      "application_fee": null,
+      "balance_transaction": "txn_00000000000000",
+      "created": 1457644764,
+      "currency": "usd",
+      "date": 1457644764,
+      "description": "Transfer to test@example.com",
+      "destination": "ba_17nbBnIRVxWaBTbMxmT8GsSS",
+      "failure_code": null,
+      "failure_message": null,
+      "livemode": false,
+      "metadata": {},
+      "recipient": "rp_00000000000000",
+      "reversals": {
+        "object": "list",
+        "data": [],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/transfers/tr_17nbBoIRVxWaBTbMJ81kpW8R/reversals"
+      },
+      "reversed": false,
+      "source_transaction": null,
+      "source_type": "card",
+      "statement_descriptor": null,
+      "status": "pending",
+      "type": "bank_account"
+    },
+    "previous_attributes": {
+      "description": "Old description"
+    }
+  },
+  "user_id": "acct_0000000000000000"
+}

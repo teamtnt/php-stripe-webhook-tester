@@ -1,0 +1,35 @@
+{
+  "created": 1326853478,
+  "livemode": false,
+  "id": "evt_00000000000000",
+  "type": "balance.available",
+  "object": "event",
+  "request": null,
+  "pending_webhooks": 1,
+  "api_version": "2018-02-06",
+  "data": {
+    "object": {
+      "object": "balance",
+      "available": [
+        {
+          "currency": "usd",
+          "amount": 0,
+          "source_types": {
+            "card": 0
+          }
+        }
+      ],
+      "livemode": false,
+      "pending": [
+        {
+          "currency": "usd",
+          "amount": 0,
+          "source_types": {
+            "card": 0
+          }
+        }
+      ]
+    }
+  },
+  "user_id": "acct_0000000000000000"
+}

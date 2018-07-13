@@ -1,0 +1,33 @@
+{
+  "created": 1326853478,
+  "livemode": false,
+  "id": "evt_00000000000000",
+  "type": "order_return.created",
+  "object": "event",
+  "request": null,
+  "pending_webhooks": 1,
+  "api_version": "2018-05-21",
+  "data": {
+    "object": {
+      "id": "orret_00000000000000",
+      "object": "order_return",
+      "amount": 1500,
+      "created": 1531523286,
+      "currency": "cad",
+      "items": [
+        {
+          "object": "order_item",
+          "amount": 1500,
+          "currency": "cad",
+          "description": "aut",
+          "parent": "sk_1CnaMsLOXa6akpHRBjPb7VR7",
+          "quantity": null,
+          "type": "sku"
+        }
+      ],
+      "livemode": false,
+      "order": "or_00000000000000",
+      "refund": "re_00000000000000"
+    }
+  }
+}

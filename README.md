@@ -16,14 +16,14 @@ endpoint with a json containing event data and make sure that your application r
 Via Composer
 
 ``` bash
-$ composer require TeamTNT/php-stripe-webhook-tester 1.1
+$ composer require TeamTNT/php-stripe-webhook-tester
 ```
 
 ## Usage
 
 ``` php
 $tester = new TeamTNT\Stripe\WebhookTester();
-$tester->setVersion('2014-09-08');
+$tester->setVersion('2018-05-21');
 $tester->setEndpoint('http://local.dev/stripe/webhooks');
 
 $response = $tester->triggerEvent('charge.succeeded');

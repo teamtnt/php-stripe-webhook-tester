@@ -1,0 +1,71 @@
+{
+  "created": 1326853478,
+  "livemode": false,
+  "id": "evt_00000000000000",
+  "type": "topup.reversed",
+  "object": "event",
+  "request": null,
+  "pending_webhooks": 1,
+  "api_version": "2018-05-21",
+  "data": {
+    "object": {
+      "id": "tu_00000000000000",
+      "object": "topup",
+      "amount": 1000,
+      "balance_transaction": null,
+      "created": 123456789,
+      "currency": "cad",
+      "description": "Top-up description",
+      "expected_availability_date": null,
+      "failure_code": null,
+      "failure_message": null,
+      "livemode": false,
+      "metadata": {
+        "order_id": "12345678"
+      },
+      "source": {
+        "id": "src_00000000000000",
+        "object": "source",
+        "ach_credit_transfer": {
+          "account_number": "test_52796e3294dc",
+          "routing_number": "110000000",
+          "fingerprint": "ecpwEzmBOSMOqQTL",
+          "bank_name": "TEST BANK",
+          "swift_code": "TSTEZ122"
+        },
+        "amount": null,
+        "client_secret": "src_client_secret_DE2T1JzPmdvcyLzWU0rahIuO",
+        "created": 1531523409,
+        "currency": "cad",
+        "flow": "receiver",
+        "livemode": false,
+        "metadata": {
+        },
+        "owner": {
+          "address": null,
+          "email": "jenny.rosen@example.com",
+          "name": null,
+          "phone": null,
+          "verified_address": null,
+          "verified_email": null,
+          "verified_name": null,
+          "verified_phone": null
+        },
+        "receiver": {
+          "address": "121042882-38381234567890123",
+          "amount_charged": 0,
+          "amount_received": 0,
+          "amount_returned": 0,
+          "refund_attributes_method": "email",
+          "refund_attributes_status": "missing"
+        },
+        "statement_descriptor": null,
+        "status": "pending",
+        "type": "ach_credit_transfer",
+        "usage": "reusable"
+      },
+      "statement_descriptor": null,
+      "status": "pending"
+    }
+  }
+}

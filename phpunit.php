@@ -9,7 +9,7 @@
 | into the script here so that we do not have to worry about the
 | loading of any our classes "manually". Feels great to relax.
 |
-*/
+ */
 require __DIR__.'/vendor/autoload.php';
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +20,5 @@ require __DIR__.'/vendor/autoload.php';
 | if the timezone is not explicitly set. This will be used by each of
 | the PHP date and date-time functions throughout the application.
 |
-*/
+ */
 date_default_timezone_set('UTC');
-Carbon\Carbon::setTestNow(Carbon\Carbon::now());

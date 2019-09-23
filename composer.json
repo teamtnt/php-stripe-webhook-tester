@@ -23,7 +23,6 @@
   ],
   "require": {
     "php": ">=5.5.0",
-    "nesbot/carbon": "~1.0",
     "guzzlehttp/guzzle": "^6.1"
   },
   "require-dev": {

@@ -31,7 +31,7 @@ $response = $tester->triggerEvent('charge.succeeded');
 For your convenience you can use chained methods
 
 ``` php
-$tester = new TeamTNT\Stripe\WebhookTester('http://local.dev/stripe/webhooks);
+$tester = new TeamTNT\Stripe\WebhookTester('http://local.dev/stripe/webhooks');
 $response = $tester->setVersion('2014-09-08')->triggerEvent('charge.succeeded');
 ```
 ## Laravel Integration 

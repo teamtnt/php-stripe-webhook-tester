@@ -1,0 +1,21 @@
+{
+  "created": 1326853478,
+  "livemode": false,
+  "id": "evt_00000000000000",
+  "type": "issuer_fraud_record.created",
+  "object": "event",
+  "request": null,
+  "pending_webhooks": 1,
+  "api_version": "2018-05-21",
+  "data": {
+    "object": {
+      "id": "issfr_00000000000000",
+      "object": "issuer_fraud_record",
+      "charge": "ch_00000000000000",
+      "created": 123456789,
+      "fraud_type": "misc",
+      "livemode": false,
+      "post_date": 123456789
+    }
+  }
+}

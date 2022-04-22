@@ -1,0 +1,36 @@
+{
+  "created": 1326853478,
+  "livemode": false,
+  "id": "evt_00000000000000",
+  "type": "sku.deleted",
+  "object": "event",
+  "request": null,
+  "pending_webhooks": 1,
+  "api_version": "2018-05-21",
+  "data": {
+    "object": {
+      "id": "sku_00000000000000",
+      "object": "sku",
+      "active": true,
+      "attributes": {
+        "size": "Medium",
+        "gender": "Unisex"
+      },
+      "created": 1531523370,
+      "currency": "cad",
+      "image": null,
+      "inventory": {
+        "quantity": 50,
+        "type": "finite",
+        "value": null
+      },
+      "livemode": false,
+      "metadata": {
+      },
+      "package_dimensions": null,
+      "price": 1500,
+      "product": "prod_00000000000000",
+      "updated": 1531523370
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "created": 1326853478,
+  "livemode": false,
+  "id": "evt_00000000000000",
+  "type": "transfer.reversed",
+  "object": "event",
+  "request": null,
+  "pending_webhooks": 1,
+  "api_version": "2018-05-21",
+  "data": {
+    "object": {
+      "id": "tr_00000000000000",
+      "object": "transfer",
+      "amount": 1100,
+      "amount_reversed": 0,
+      "balance_transaction": "txn_00000000000000",
+      "created": 1531523422,
+      "currency": "cad",
+      "description": null,
+      "destination": "acct_1CE16rLOXa6akpHR",
+      "destination_payment": "py_DE2UNRjRSzRCjm",
+      "livemode": false,
+      "metadata": {
+      },
+      "reversals": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/transfers/tr_1CnaP4LOXa6akpHRCn7Li8lp/reversals"
+      },
+      "reversed": false,
+      "source_transaction": null,
+      "source_type": "card",
+      "transfer_group": null
+    }
+  }
+}

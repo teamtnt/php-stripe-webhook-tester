@@ -1,0 +1,98 @@
+{
+  "created": 1326853478,
+  "livemode": false,
+  "id": "evt_00000000000000",
+  "type": "charge.refunded",
+  "object": "event",
+  "request": null,
+  "pending_webhooks": 1,
+  "api_version": "2018-05-21",
+  "data": {
+    "object": {
+      "id": "ch_00000000000000",
+      "object": "charge",
+      "amount": 100,
+      "amount_refunded": 100,
+      "application": null,
+      "application_fee": null,
+      "balance_transaction": "txn_00000000000000",
+      "captured": false,
+      "created": 1531523000,
+      "currency": "cad",
+      "customer": null,
+      "description": "My First Test Charge (created for API docs)",
+      "destination": null,
+      "dispute": null,
+      "failure_code": null,
+      "failure_message": null,
+      "fraud_details": {
+      },
+      "invoice": null,
+      "livemode": false,
+      "metadata": {
+      },
+      "on_behalf_of": null,
+      "order": null,
+      "outcome": null,
+      "paid": true,
+      "receipt_email": null,
+      "receipt_number": null,
+      "refunded": true,
+      "refunds": {
+        "object": "list",
+        "data": [
+          {
+            "id": "re_DE2Nb7jEMsjZsi",
+            "object": "refund",
+            "amount": 100,
+            "balance_transaction": "txn_DE2Nmm8074zvGI",
+            "charge": "ch_1CnaIGLOXa6akpHR5AWiUhfo",
+            "created": 1531523000,
+            "currency": "cad",
+            "metadata": {
+            },
+            "reason": null,
+            "receipt_number": "1885-8495",
+            "status": "succeeded"
+          }
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges/ch_1CnaIGLOXa6akpHR5AWiUhfo/refunds"
+      },
+      "review": null,
+      "shipping": null,
+      "source": {
+        "id": "card_00000000000000",
+        "object": "card",
+        "address_city": null,
+        "address_country": null,
+        "address_line1": null,
+        "address_line1_check": null,
+        "address_line2": null,
+        "address_state": null,
+        "address_zip": null,
+        "address_zip_check": null,
+        "brand": "Visa",
+        "country": "US",
+        "customer": "cus_00000000000000",
+        "cvc_check": "pass",
+        "dynamic_last4": null,
+        "exp_month": 7,
+        "exp_year": 2019,
+        "fingerprint": "EB8zTN6S64nsJn2C",
+        "funding": "credit",
+        "last4": "4242",
+        "metadata": {
+        },
+        "name": null,
+        "tokenization_method": null
+      },
+      "source_transfer": null,
+      "statement_descriptor": null,
+      "status": "succeeded",
+      "transfer_group": null,
+      "fee": 0
+    }
+  }
+}
